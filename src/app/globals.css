@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --brandcolor: #ffcda3;
+  --brandcolor1: #fce2c2;
+  --brandcolor2: #ffede5;
+  --brandcolor3: #ffff52f;
+  --primarycolor: #46bcf2;
+  --successcolor: #16C79A;
+  --dangercolor: #ef4f4f;
+  --warncolor: #F6C065;
+  --infocolor: #008891;
+  --grey900:#101010;
+  --grey700:#484848;
+  --grey400: #9a9a9a;
+  --grey100: #999999;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../../public/font/SourceSansPro-ExtraLight.otf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../../public/font/SourceSansPro-Light.otf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../../public/font/SourceSansPro-Regular.otf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../../public/font/SourceSansPro-Semibold.otf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url('../../public/font/SourceSansPro-Bold.otf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "SourceSansPro", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+button, input, textarea, select, a {
+  font-family: "SourceSansPro", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
