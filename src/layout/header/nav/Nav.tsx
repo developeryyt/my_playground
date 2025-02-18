@@ -10,7 +10,10 @@ const Nav = () => {
                 ROUTES_TABLE.map((route) => {
                     return (
                         <li key={route.id} className=''>
-                            <Link className='p-3 font-semibold text-fontColor rounded-md' href={`/${route.title}`}>{route.title}</Link>
+                            <Link
+                                className='p-3 font-semibold text-fontColor rounded-md hover:bg-brandcolor2'
+                                href={`/${route.title}`}
+                            >{route.title.toUpperCase()}</Link>
                         </li>
                     )
                 })

@@ -3,18 +3,18 @@ import {ROUTES} from "@/types";
 export const ROUTES_TABLE: ROUTES[] = [
     {
         id: 0,
-        title: 'Home',
+        title: 'home',
     },
     {
         id: 1,
-        title: 'Blog',
+        title: 'blog',
     },
     {
         id: 2,
-        title: 'PLAYGROUND'
+        title: 'playground'
     },
     {
         id: 3,
-        title: 'Contact'
+        title: 'contact'
     }
 ]
