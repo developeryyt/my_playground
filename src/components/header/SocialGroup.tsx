@@ -5,9 +5,9 @@ const SocialGroup = () => {
 
 
     return (
-        <div>
-            <Instagram />
-            <LinkedIn />
+        <div className='flex items-center gap-4'>
+            <Instagram className={'w-4'} />
+            <LinkedIn className={'w-4'} />
         </div>
     );
 };

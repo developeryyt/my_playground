@@ -5,11 +5,9 @@ const TodayDates = () => {
     const today = getTodayDates();
 
 
-    console.log(today)
-
     return (
         <div>
-            <span>{today.day} {today.mth}, {today.year}</span>
+            <span className='text-sm text-grey700'>{today.day} {today.mth}, {today.year}</span>
         </div>
     );
 };

@@ -13,6 +13,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         brandcolor: "var(--brandcolor)",
+        grey700: "var(--grey700)",
+        grey400: "var(--grey400)",
+        grey100: "var(--grey100)"
       },
     },
   },
