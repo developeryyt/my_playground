@@ -18,6 +18,7 @@
   --grey700:#484848;
   --grey400: #9a9a9a;
   --grey100: #999999;
+  --fontColor: #222831;
 }
 
 @media (prefers-color-scheme: dark) {

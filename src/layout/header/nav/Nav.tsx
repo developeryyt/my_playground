@@ -5,12 +5,12 @@ const Nav = () => {
 
 
     return (
-        <ul>
+        <ul className='flex gap-10 items-center justify-center'>
             {
                 ROUTES_TABLE.map((route) => {
                     return (
-                        <li key={route.id}>
-                            <Link href={`/${route.title}`}>{route.title}</Link>
+                        <li key={route.id} className=''>
+                            <Link className='p-3 font-semibold text-fontColor rounded-md' href={`/${route.title}`}>{route.title}</Link>
                         </li>
                     )
                 })

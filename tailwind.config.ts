@@ -15,7 +15,8 @@ export default {
         brandcolor: "var(--brandcolor)",
         grey700: "var(--grey700)",
         grey400: "var(--grey400)",
-        grey100: "var(--grey100)"
+        grey100: "var(--grey100)",
+        fontColor: "var(--fontColor)",
       },
     },
   },
