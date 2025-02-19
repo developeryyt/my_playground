@@ -12,7 +12,7 @@ const Nav = () => {
                         <li key={route.id} className=''>
                             <Link
                                 className='p-3 font-semibold text-fontColor rounded-md hover:bg-brandcolor2'
-                                href={`/${route.title}`}
+                                href={`/${route.title === 'home' ? '' : route.title}`}
                             >{route.title.toUpperCase()}</Link>
                         </li>
                     )

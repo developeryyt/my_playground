@@ -1,7 +1,10 @@
-const DesignBox = () => {
-    return (
-        <div>
+import {COMMONPROPS} from "@/types";
 
+const DesignBox = ({ className }: { className: COMMONPROPS['className'] }) => {
+
+
+    return (
+        <div className={className}>
         </div>
     );
 };

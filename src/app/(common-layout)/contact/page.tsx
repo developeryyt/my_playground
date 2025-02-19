@@ -1,14 +1,12 @@
 import Header from "@/layout/header/Header";
-import DesignBox from "@/components/DesignBox";
 
-
-const Home = () => {
+const Page = () => {
     return (
         <div>
             <Header />
-
+            contact
         </div>
     );
 };
 
-export default Home;
+export default Page;
