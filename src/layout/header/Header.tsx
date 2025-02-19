@@ -6,6 +6,7 @@ import Profile from "@/components/Profile";
 const Header = () => {
 
     return (
+
         <header className='header'>
             <div className='inner'>
                 <div className='header__top bg-brandcolor2 pl-40 pr-40'>

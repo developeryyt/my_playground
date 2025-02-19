@@ -27,11 +27,13 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={'relative'}
+        className='relative'
       >
         <Header />
-        <div>
-            {children}
+        <div className='container'>
+            <div className='inner'>
+                {children}
+            </div>
         </div>
         <Footer />
       </body>
