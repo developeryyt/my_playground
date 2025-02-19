@@ -20,6 +20,7 @@ const Header = () => {
                         <div className='flex justify-between items-center pt-8 pb-8'>
                             <Nav />
                             <Profile />
+                            1
                         </div>
                     </div>
                 </div>
