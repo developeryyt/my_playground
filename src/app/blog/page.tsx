@@ -3,8 +3,8 @@ import Header from "@/layout/header/Header";
 const Page = () => {
     return (
         <div>
-            <Header />
-            contact
+            {/*<Header/>*/}
+            Blog
         </div>
     );
 };
