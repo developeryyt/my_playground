@@ -12,14 +12,14 @@ const SocialGroup = () => {
                 target='_blank'
                 className='inline-block align-middle'
             >
-                <Instagram className={'w-4'}/>
+                <Instagram className='w-4'/>
             </Link>
             <Link
                 href='https://www.linkedin.com/in/%EC%97%B0%ED%83%9C-%EC%9C%A0-4a4b92337/'
                 className='inline-block align-middle'
                 target='_blank'
             >
-                <LinkedIn className={'w-4'}/>
+                <LinkedIn className='w-4'/>
             </Link>
         </div>
     );
