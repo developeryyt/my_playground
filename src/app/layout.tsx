@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/layout/header/Header";
 import Footer from "@/layout/footer/Footer";
+import Menu from "@/components/nav/Menu";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
