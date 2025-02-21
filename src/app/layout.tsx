@@ -31,7 +31,7 @@ export default function RootLayout({
         className='relative'
       >
         <Header />
-        <div className='container'>
+        <div className='container m-auto'>
             <div className='inner'>
                 {children}
             </div>

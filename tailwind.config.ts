@@ -19,6 +19,7 @@ export default {
         grey400: "var(--grey400)",
         grey100: "var(--grey100)",
         fontColor: "var(--fontColor)",
+        formColor: "var(--formcolor)",
       },
     },
   },

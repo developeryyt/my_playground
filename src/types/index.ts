@@ -7,3 +7,8 @@ export interface ROUTES {
 export type COMMONPROPS = {
     className: string;
 }
+
+export interface FormInput {
+    placeholder: string;
+
+}

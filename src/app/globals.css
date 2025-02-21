@@ -19,6 +19,7 @@
   --grey400: #9a9a9a;
   --grey100: #999999;
   --fontColor: #222831;
+  --formcolor: #F3F3F3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,6 +94,10 @@ button, input {
   box-sizing: border-box;
 }
 
+textarea {
+  resize: none;
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -104,5 +109,4 @@ button, input {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-
 }
