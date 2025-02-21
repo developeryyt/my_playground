@@ -3,6 +3,7 @@
 import MyInput from "@/components/form/MyInput";
 import MyTextArea from "@/components/form/MyTextArea";
 import {useState} from "react";
+import MyButton from "@/components/form/MyButton";
 
 const ContactForm = () => {
 
@@ -10,6 +11,9 @@ const ContactForm = () => {
     const [emailValue, setEmailValue] = useState<string>('');
     const [contents, setContents] = useState<string>('')
 
+    const submitHandler = () => {
+
+    }
 
 
     return (
@@ -17,7 +21,7 @@ const ContactForm = () => {
             <div className='flex items-center gap-6 pb-5'>
                 <div className='flex-1'>
                     <MyInput
-                        className='bg-formColor pl-4 min-h-16 rounded-xl'
+                        className='pl-4 min-h-16 rounded-xl'
                         placeholder='Name*'
                         value={nameValue}
                         type='text'
@@ -26,7 +30,7 @@ const ContactForm = () => {
                 </div>
                 <div className='flex-1'>
                     <MyInput
-                        className='bg-formColor pl-4 min-h-16 rounded-xl'
+                        className='pl-4 min-h-16 rounded-xl'
                         placeholder='Email*'
                         value={emailValue}
                         type='email'
@@ -34,13 +38,20 @@ const ContactForm = () => {
                     />
                 </div>
             </div>
-            <div>
+            <div className='pb-8'>
                 <MyTextArea
-                    className='w-full bg-formColor rounded-xl p-4 min-h-[200px]'
+                    className='w-full rounded-xl p-4 min-h-[200px]'
                     value={contents}
                     onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setContents(e.target.value)}
                     placeholder='Message'
-
+                />
+            </div>
+            <div>
+                <MyButton
+                    text='Submit'
+                    onClick={submitHandler}
+                    type='button'
+                    className='bg-grey900 text-white min-h-16 pl-8 pr-8 rounded-xl font-bold'
                 />
             </div>
         </div>

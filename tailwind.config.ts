@@ -15,6 +15,7 @@ export default {
         brandcolor: "var(--brandcolor)",
         brandcolor2: "var(--brandcolor2)",
         brandcolor3: "var(--brandcolor3)",
+        grey900: "var(--grey900)",
         grey700: "var(--grey700)",
         grey400: "var(--grey400)",
         grey100: "var(--grey100)",

@@ -1,10 +1,12 @@
+import {COMMONPROPS} from "@/types";
+
 const MyTextArea = ({
     value,
     onChange,
     placeholder,
     className
 }: {
-    className: string;
+    className: COMMONPROPS['className'];
     value: string;
     onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
     placeholder: string;
