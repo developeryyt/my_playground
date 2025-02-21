@@ -86,7 +86,7 @@ body, html {
   padding: 0;
 }
 
-button {
+button, input {
   border: none;
   padding: 0;
   outline: 0;
@@ -98,4 +98,11 @@ button {
   vertical-align: middle;
   width: auto;
   height: auto;
+}
+
+.ipt{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+
 }
