@@ -31,8 +31,8 @@ export default function RootLayout({
         className='relative'
       >
         <Header />
-        <div className='container m-auto'>
-            <div className='inner'>
+        <div className='container contents m-auto h-[calc(100%-165px)]'>
+            <div className='inner h-full'>
                 {children}
             </div>
         </div>
