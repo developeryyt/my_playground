@@ -4,8 +4,8 @@ const NotFound = () => {
 
 
     return (
-        <div className='h-full bg-brandcolor2'>
-            <div className='pt-[78px] pb-[78px]'>
+        <div className='h-full bg-brandcolor2 relative'>
+            <div className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div>
                     <BG404 />
                 </div>
