@@ -1,7 +1,9 @@
+import MyEditor from "@/components/MyEditor";
+
 const Page = () => {
     return (
         <div>
-            글쓰기 공간
+            <MyEditor />
         </div>
     );
 };
