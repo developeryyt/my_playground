@@ -2,9 +2,8 @@ import Login from "@/components/Login";
 
 const LoginForm = () => {
     return (
-        <div>
-            <section>
-                <h3>Login</h3>
+        <div className='flex flex-1 justify-center'>
+            <section className='w-full'>
                 <Login />
             </section>
         </div>

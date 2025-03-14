@@ -16,7 +16,7 @@ const Page = () => {
                         <dd>For Authorized Person Only</dd>
                     </dl>
                 </div>
-                <div className='flex-1'>
+                <div className='flex-1 flex items-center px-10'>
                     <LoginForm />
                 </div>
             </div>
