@@ -18,4 +18,3 @@ let pattern7 = /[a-zA-Z0-9]/ //알파벳 대소문자, 숫자 전체
 let a = 'JavaScript'.search(pattern6); // 첫번째로 일치하는 부분 문자열의 위치 반환. 전역 검색 지원x
 console.log(a)
 
-
