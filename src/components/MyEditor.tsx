@@ -10,7 +10,7 @@ const LazyQuill = dynamic(() => import('react-quill-new'), {
 
 const MyEditor = () => {
 
-    return <LazyQuill theme='snow'  />
+    return <LazyQuill theme='snow' />
 };
 
 export default MyEditor;
