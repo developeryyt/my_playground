@@ -1,5 +1,8 @@
 'use client'
+
 import {useFormik} from 'formik';
+import Checkbox from "@/components/icons/Checkbox";
+import CheckedBox from "@/components/icons/CheckedBox";
 
 const Login = () => {
 
@@ -18,13 +21,12 @@ const Login = () => {
         },
         onSubmit: (values) => {
             console.log('로그인 정보', { values })
-
         }
     })
 
     return (
         <>
-            <form onSubmit={formik.handleSubmit} autoComplete='off'>
+            <form onSubmit={formik.handleSubmit} >
                 <fieldset>
                     <legend className='text-4xl font-semibold block pb-8'>Login</legend>
                     <div className='pb-8'>
@@ -32,13 +34,14 @@ const Login = () => {
                             id='myEmail'
                             name='email'
                             type='email'
-                            placeholder='Email'
                             value={formik.values.email}
                             onChange={formik.handleChange}
-                            className='ipt min-h-12 !bg-grey700'
+                            className='ipt px-[28px] min-h-12 rounded-[10px] !bg-formColor &::placeholder font-bold focus:border-brandcolor focus:border-[1px] focus:border-solid'
+                            autoComplete='new-email'
+                            placeholder='Username or Email'
                         />
                     </div>
-                    <div>
+                    <div className='pb-8'>
                         <input
                             id='myPassword'
                             name='password'
@@ -46,7 +49,7 @@ const Login = () => {
                             placeholder='Password'
                             value={formik.values.password}
                             onChange={formik.handleChange}
-                            className='ipt min-h-12 !bg-red-200'
+                            className='ipt px-[28px] min-h-12 rounded-[10px] !bg-formColor &::placeholder font-bold focus:border-brandcolor focus:border-[1px] focus:border-solid'
                         />
                     </div>
                     <div>
@@ -57,8 +60,12 @@ const Login = () => {
                                 type='checkbox'
                                 checked={formik.values.remember}
                                 onChange={formik.handleChange}
+                                className='hidden'
                             />
-                            <span>Remember me</span>
+                            <span className='inline-block align-middle pr-2'>
+                                {formik.values.remember ? <CheckedBox /> : <Checkbox/>}
+                            </span>
+                            <span className='inline-block align-middle text-grey400 text-[14px] font-semibold'>Remember me</span>
                         </label>
                     </div>
                     <div>
