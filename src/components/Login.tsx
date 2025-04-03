@@ -18,8 +18,11 @@ const Login = () => {
             password: '',
             remember: false
         },
-        validate: values => {
-            const errors = {}
+        validate: (values) => {
+            const errors: {
+                username?: string
+                password?: string
+            } = {}
 
             if(!values.username) {
                 errors.username = '아이디를 입력해주세요.'
